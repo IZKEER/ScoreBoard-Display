@@ -16,6 +16,7 @@ We can also reset the scoreboard as whenever we wish to do so.
 
 ### Built with
 
+- Javascript
 - Semantic HTML5
 - CSS
-- Javascript
+
