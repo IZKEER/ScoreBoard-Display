@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball Chart</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font links -->
+    <style>
+      @import url('http://fonts.cdnfonts.com/css/cursed-timer-ulil');
+    </style>
+    <style>
+      @import url('http://fonts.cdnfonts.com/css/verdana');
+    </style>
+    <!-- end Font Links -->
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div class="column">
+          <h3>HOME</h3>
+          <h2 class="score" id="home_score">0</h2>
+          <div class="score-btn">
+            <button id="btn-one" onclick="addOneHome()">+1</button>
+            <button id="btn-two" onclick="addTwoHome()">+2</button>
+            <button id="btn-three" onclick="addThreeHome()">+3</button>
+          </div>
+        </div>
+        <button id="btn-reset" class="reset-btn" onclick="reset()">
+          RESET
+        </button>
+        <div class="column">
+          <h3>GUEST</h3>
+          <h2 class="score" id="guest_score">0</h2>
+          <div class="score-btn">
+            <button id="btn-one" onclick="addOneGuest()">+1</button>
+            <button id="btn-two" onclick="addTwoGuest()">+2</button>
+            <button id="btn-three" onclick="addThreeGuest()">+3</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="index.js"></script>
+  </body>
+</html>
