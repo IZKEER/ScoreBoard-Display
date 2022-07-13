@@ -38,8 +38,9 @@ h3 {
 }
 
 .reset-btn {
-  height: 35px;
-  min-width: 45px;
+  word-wrap: break-word;
+  max-height: 35px;
+  width: fit-content;
   display: inline-block;
   vertical-align: middle;
   background-color: transparent;
@@ -49,4 +50,7 @@ h3 {
   margin-top: 11vh;
   font-family: 'Cursed Timer ULiL', sans-serif;
   color: #f94f6d;
+}
+
+@media screen {
 }

@@ -31,9 +31,11 @@
           <h3>HOME</h3>
           <h2 class="score" id="home_score">0</h2>
           <div class="score-btn">
-            <button id="btn-one" onclick="addOneHome()">+1</button>
-            <button id="btn-two" onclick="addTwoHome()">+2</button>
-            <button id="btn-three" onclick="addThreeHome()">+3</button>
+            <button id="btn-one" onclick="addOne(homeScorePoint)">+1</button>
+            <button id="btn-two" onclick="addTwo(homeScorePoint)">+2</button>
+            <button id="btn-three" onclick="addThree(homeScorePoint)">
+              +3
+            </button>
           </div>
         </div>
         <button id="btn-reset" class="reset-btn" onclick="reset()">
@@ -43,9 +45,11 @@
           <h3>GUEST</h3>
           <h2 class="score" id="guest_score">0</h2>
           <div class="score-btn">
-            <button id="btn-one" onclick="addOneGuest()">+1</button>
-            <button id="btn-two" onclick="addTwoGuest()">+2</button>
-            <button id="btn-three" onclick="addThreeGuest()">+3</button>
+            <button id="btn-one" onclick="addOne(guestScorePoint)">+1</button>
+            <button id="btn-two" onclick="addTwo(guestScorePoint)">+2</button>
+            <button id="btn-three" onclick="addThree(guestScorePoint)">
+              +3
+            </button>
           </div>
         </div>
       </div>
