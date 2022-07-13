@@ -12,19 +12,16 @@ let resetButton = document.getElementById('btn-reset');
 function addOneHome() {
   let newAddPoint = (homeScore += 1);
   homeScorePoint.textContent = newAddPoint;
-  console.log(newAddPoint);
 }
 
 function addTwoHome() {
   let newAddPoint = (homeScore += 2);
   homeScorePoint.textContent = newAddPoint;
-  console.log(newAddPoint);
 }
 
 function addThreeHome() {
   let newAddPoint = (homeScore += 3);
   homeScorePoint.textContent = newAddPoint;
-  console.log(newAddPoint);
 }
 
 //guestScore function
@@ -32,19 +29,16 @@ function addThreeHome() {
 function addOneGuest() {
   let newAddPoint = (guestScore += 1);
   guestScorePoint.textContent = newAddPoint;
-  console.log(newAddPoint);
 }
 
 function addTwoGuest() {
   let newAddPoint = (guestScore += 2);
   guestScorePoint.textContent = newAddPoint;
-  console.log(newAddPoint);
 }
 
 function addThreeGuest() {
   let newAddPoint = (guestScore += 3);
   guestScorePoint.textContent = newAddPoint;
-  console.log(newAddPoint);
 }
 
 //reset score function
