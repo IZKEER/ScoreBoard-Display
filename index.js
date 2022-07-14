@@ -8,40 +8,28 @@ let scoreBoard = 0;
 //Reset button
 let resetButton = document.getElementById('btn-reset');
 
+let addPoint = 0;
+let numAdd = 0;
 // homeScore function
 
-function addOne(scoreBoard) {
-  if (scoreBoard == homeScorePoint) {
-    let newAddPoint = (homeScore += 1);
-    homeScorePoint.textContent = newAddPoint;
+function choose(teamToAdd, addPoint) {
+  if (teamToAdd == homeScorePoint) {
+    homeScore = add(homeScore, addPoint);
+    homeScorePoint.textContent = homeScore;
   } else {
-    let newAddPoint = (guestScore += 1);
-    guestScorePoint.textContent = newAddPoint;
+    guestScore = add(guestScore, addPoint);
+    guestScorePoint.textContent = guestScore;
   }
 }
-function addTwo(scoreBoard) {
-  if (scoreBoard == homeScorePoint) {
-    let newAddPoint = (homeScore += 2);
-    homeScorePoint.textContent = newAddPoint;
-  } else {
-    let newAddPoint = (guestScore += 2);
-    guestScorePoint.textContent = newAddPoint;
-  }
-}
-function addThree(scoreBoard) {
-  if (scoreBoard == homeScorePoint) {
-    let newAddPoint = (homeScore += 3);
-    homeScorePoint.textContent = newAddPoint;
-  } else {
-    let newAddPoint = (guestScore += 3);
-    guestScorePoint.textContent = newAddPoint;
-  }
+
+function add(scoreBoard, numAdd) {
+  scoreBoard += numAdd;
+  return scoreBoard;
 }
 
 function reset() {
   homeScore = 0;
   guestScore = 0;
-  newAddPoint = 0;
   homeScorePoint.textContent = 0;
   guestScorePoint.textContent = 0;
 }

@@ -26,28 +26,37 @@
   </head>
   <body>
     <header>
+      <!-- homeTeam -->
       <div id="container">
         <div class="column">
           <h3>HOME</h3>
           <h2 class="score" id="home_score">0</h2>
           <div class="score-btn">
-            <button id="btn-one" onclick="addOne(homeScorePoint)">+1</button>
-            <button id="btn-two" onclick="addTwo(homeScorePoint)">+2</button>
-            <button id="btn-three" onclick="addThree(homeScorePoint)">
+            <button id="btn-one" onclick="choose(homeScorePoint, 1 )">
+              +1
+            </button>
+            <button id="btn-two" onclick="choose(homeScorePoint, 2)">+2</button>
+            <button id="btn-three" onclick="choose(homeScorePoint, 3)">
               +3
             </button>
           </div>
         </div>
+        <!-- RESET BUTTON -->
         <button id="btn-reset" class="reset-btn" onclick="reset()">
           RESET
         </button>
+        <!-- Guest Team  -->
         <div class="column">
           <h3>GUEST</h3>
           <h2 class="score" id="guest_score">0</h2>
           <div class="score-btn">
-            <button id="btn-one" onclick="addOne(guestScorePoint)">+1</button>
-            <button id="btn-two" onclick="addTwo(guestScorePoint)">+2</button>
-            <button id="btn-three" onclick="addThree(guestScorePoint)">
+            <button id="btn-one" onclick="choose(guestScorePoint, 1)">
+              +1
+            </button>
+            <button id="btn-two" onclick="choose(guestScorePoint, 2)">
+              +2
+            </button>
+            <button id="btn-three" onclick="choose(guestScorePoint, 3)">
               +3
             </button>
           </div>
