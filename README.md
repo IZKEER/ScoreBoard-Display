@@ -1,5 +1,7 @@
 # Scoreboard Display
 
+## [live website](https://izkeer.github.io/ScoreBoard-Display/)
+
 ### Screenshot
 
 ![](images/print.png)
